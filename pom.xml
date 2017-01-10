@@ -36,5 +36,11 @@
       <version>4.1.6.RELEASE</version>
      <type>jar</type>
     </dependency>
+    <!-- log4j -->
+    <dependency>
+  	  <groupId>log4j</groupId>
+      <artifactId>log4j</artifactId>
+      <version>1.2.16</version>
+    </dependency>
   </dependencies>
 </project>
