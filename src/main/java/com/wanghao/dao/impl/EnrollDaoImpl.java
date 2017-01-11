@@ -39,7 +39,7 @@ public class EnrollDaoImpl implements EnrollDao{
     public void update(Enroll enroll) throws SQLException {
 	Connection conn = null;
 	PreparedStatement ps = null;
-	String sql = "update enroll set create_at=?,update_at=?,student_name=?,student_qq=?,join_time=?,student_number=?,log_link=?,target=?,reference=?";
+	String sql = "update enroll set create_at=?,update_at=?,student_name=?,student_qq=?,join_time=?,student_number=?,log_link=?,target=?,reference=? WHERE id=?";
 	try{
 	    conn = ConnectionUntil.getConnection();
 	    ps = conn.prepareStatement(sql);
